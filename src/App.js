@@ -1,6 +1,7 @@
 
 import './App.css';
 import Header from './component/Header';
+import Login from './component/Login';
 import Start from './component/Start';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
     <Header/>
     <Start/>
+    <Login/>
     
     </>
   );
