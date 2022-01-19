@@ -1,16 +1,17 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import "./style.css"
 
 const Start = () => {
-    const history=useHistory()
+    const history = useHistory()
     return (
         <>
-            <div className='container text-center mt-5'>
+            <div className='container text-center mt-3'>
                 <div className="row">
                     <div className="col-sm-12">
-                        <p className='fw-bold fs-6 mx-auto p-2 rounded-3' style={{ backgroundColor: 'rgb(255 228 228 )', fontSize: '12px', width: '40%', color: "rgb(173 81 80 )" }}>Please wait to open your COVID test; we will let you know when it is time to start!</p>
+                        <p className='alerts fw-bold mx-auto p-2 rounded-3' >Please wait to open your COVID test; we will let you know when it is time to start!</p>
                     </div>
-                    <div className="col-sm-12">
+                    <div className="col-sm-12 my-1">
                         <h3 className='fw-bold'>Rapid COVID Testing</h3>
                     </div>
                     <div className="col-sm-12">
@@ -19,11 +20,22 @@ const Start = () => {
                         </div>
                     </div>
                     <div className="col-sm-12">
-                    <p className='text-secondary my-5 mx-auto' style={{ width: '40%' }}>Take your COVID test... Anytime, anyplace! Your health is our priority!</p>
+                        <p className='text-secondary my-5 mx-auto' style={{ width: '30%',fontSize:'16px' }}>Take your COVID test... Anytime, anyplace! Your health is our priority!</p>
                     </div>
-                    <div className="col-sm-12">
-                    <div className="btn py-2 px-3 my-3" style={{ backgroundColor: "#5554e6", color: '#fff' }}
-                    >Start New Test</div>
+                    <div className="col-sm-12 m-1">
+                        <button className="btn py-2 px-3" style={{ backgroundColor: "#5554e6", color: '#fff' }}
+                        onClick={()=>{history.push('/login')}}
+                        >Start New Test</button>
+                    </div>
+                    <div className="footerDot col-sm-12 mt-4">
+                        <span style={{color:'#5554e6'}}><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
+                        <span><i class="fas fa-circle"></i></span>
                     </div>
                 </div>
             </div>
