@@ -23,7 +23,7 @@ const Start = () => {
                     </div>
                     <div className="col-sm-12">
                     <div className="btn py-2 px-3 my-3" style={{ backgroundColor: "#5554e6", color: '#fff' }}
-                    onClick={history.push('/login')}>Start New Test</div>
+                    >Start New Test</div>
                     </div>
                 </div>
             </div>
