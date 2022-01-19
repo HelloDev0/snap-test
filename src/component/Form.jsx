@@ -14,7 +14,7 @@ const Form = () => {
                     </div>
 
                 </div>
-                <div className="row">
+                <div className="squitch row">
                     <div className="col-md-4">
                         <div class="loginForm mb-4 text-start">
                             <label for="exampleFormControlInput1" class="form-label fw-bold">First Name <span className='text-danger'>*</span></label>
@@ -37,7 +37,7 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="squitch row">
                     <div className="col-md-6">
                         <div class="loginForm mb-4 text-start">
                             <label for="exampleFormControlInput1" class="form-label fw-bold">Email Address <span className='text-danger'>*</span></label>
@@ -67,7 +67,7 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="squitch row">
                     <div className="col-md-4">
                         <div class="loginForm mb-4 text-start">
                             <label for="exampleFormControlInput1" class="form-label fw-bold">City<span className='text-danger'>*</span></label>
@@ -90,7 +90,7 @@ const Form = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="squitch row">
                     <div className="col-md-4">
                         <div class="loginForm mb-4 text-start">
                             <label for="exampleFormControlInput1" class="form-label fw-bold">Gender (at birth)<span className='text-danger'>*</span></label>
