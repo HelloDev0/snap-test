@@ -12,14 +12,14 @@ const Login = () => {
                         <p className='alerts fw-bold mx-auto p-2 rounded-3' >Please wait to open your COVID test; we will let you know when it is time to start!</p>
                     </div>
                     <div className="col-sm-12 mx-auto my-3" style={{ width: '35%' }}>
-                        <div class="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" class="form-label fw-bold">Company Code <span className='text-danger'>*</span></label>
-                            <input type="text" class="form-control border-0"
+                        <div className="loginForm mb-4 text-start">
+                            <label for="exampleFormControlInput1" className="form-label fw-bold">Company Code <span className='text-danger'>*</span></label>
+                            <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
-                        </div>
-                        <div class="loginForm mb-4 text-start">
-                            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Employee ID #<span className='text-danger'>*</span></label>
-                            <input type='text' class="form-control border-0"
+Name                        </div>
+                        <div className="loginForm mb-4 text-start">
+                            <label for="exampleFormControlTextarea1" className="form-label fw-bold">Employee ID #<span className='text-danger'>*</span></label>
+                            <input type='text' className="form-control border-0"
                                 id="exampleFormControl2" rows="3"></input>
                         </div>
 
@@ -36,14 +36,14 @@ const Login = () => {
                     </div>
 
                     <div className="footerDot col-sm-12" style={{ marginTop: '6.8rem' }}>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span style={{ color: '#5554e6' }}><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
+                        <span ><i className="fas fa-circle"></i></span>
+                        <span style={{ color: '#5554e6' }}><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
                     </div>
 
                 </div>

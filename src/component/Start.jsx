@@ -28,14 +28,14 @@ const Start = () => {
                         >Start New Test</button>
                     </div>
                     <div className="footerDot col-sm-12 mt-4">
-                        <span style={{color:'#5554e6'}}><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
+                        <span style={{color:'#5554e6'}}><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
                     </div>
                 </div>
             </div>
