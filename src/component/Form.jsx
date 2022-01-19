@@ -3,14 +3,14 @@ import { useHistory } from 'react-router-dom'
 import './style.css'
 
 const Form = () => {
-    const history=useHistory()
+    const history = useHistory()
     return (
         <>
             <div className="container">
                 <div className="row my-4">
                     <div className="col-sm-12 ">
                         <p className='alerts fw-bold mx-auto p-2 rounded-3' >
-                        Reminder Please do not open your test yet. We will let you know when it is time.</p>
+                            Reminder Please do not open your test yet. We will let you know when it is time.</p>
                     </div>
 
                 </div>
@@ -113,35 +113,35 @@ const Form = () => {
                         </div>
                     </div>
                     <div className="col-md-12 " >
-                        <div className="form-check mx-auto mx-0 p-0 my-2" style={{width:'400px'}}>
-                        <label for="exampleFormControlInput1" class="form-label fw-bold text-start">Identity Confirmation<span className='text-danger'>*</span></label>
+                        <div className="form-check mx-auto mx-0 p-0 my-2" style={{ width: '400px' }}>
+                            <label for="exampleFormControlInput1" class="form-label fw-bold text-start">Identity Confirmation<span className='text-danger'>*</span></label>
                         </div>
-                    
-                        <div class="form-check mx-auto mb-3" style={{width:'400px'}}>
-                            
+
+                        <div class="form-check mx-auto mb-3" style={{ width: '400px' }}>
+
                             <input class="form-check-input ml-0" type="checkbox" value="" id="flexCheckDefault" />
                             <label class="form-check-label" for="flexCheckDefault">
-                            I hereby verify that all the information provided above is true and accurate.
+                                I hereby verify that all the information provided above is true and accurate.
                             </label>
                         </div>
-                        <div class="form-check mx-auto mb-3" style={{width:'400px'}}>
-                            
+                        <div class="form-check mx-auto mb-3" style={{ width: '400px' }}>
+
                             <input class="form-check-input ml-0" type="checkbox" value="" id="flexCheckDefault" />
                             <label class="form-check-label" for="flexCheckDefault">
-                            Terms & Conditions <span className='text-danger'>*</span>
+                                Terms & Conditions <span className='text-danger'>*</span>
                             </label>
                         </div>
                     </div>
-                    
+
 
                 </div>
                 <div className="row text-center">
-                <div className="col-sm-12 mt-2">
-                        <div className="prevBtn btn px-5 py-2.5" 
-                        onClick={()=>{history.push('/login')}}>
+                    <div className="col-sm-12 mt-2">
+                        <div className="prevBtn btn px-5 py-2.5"
+                            onClick={() => { history.push('/login') }}>
                             Previous</div>
                         <div className="nextBtn btn m-3 px-5 py-2.5"
-                        onClick={()=>{history.push('/snap')}}>
+                            onClick={() => { history.push('/snap') }}>
                             Next</div>
                     </div>
 
@@ -157,7 +157,8 @@ const Form = () => {
                     </div>
                 </div>
 
-                
+
+
 
             </div>
         </>

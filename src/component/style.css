@@ -44,3 +44,13 @@
     padding-left: 7rem;
     padding-right: 7rem;
 }
+.instBtn{
+    color: #fff;
+    background-color: #5554e6;
+    margin: 0 auto;
+}
+
+.instBtn:hover{
+    color: white;
+    background-color: #2f2fc9;
+}
