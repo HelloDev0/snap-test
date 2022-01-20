@@ -44,7 +44,7 @@ const TestResult = () => {
                         onClick={() => { history.push('/recordvideo') }}>
                         Previous</div>
                     <div className="nextBtn btn m-3 px-5 py-2.5"
-                        onClick={() => { history.push('/testresult') }}>
+                        onClick={() => { history.push('/finish') }}>
                         Next</div>
                 </div>
 
