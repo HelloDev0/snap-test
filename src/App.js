@@ -8,6 +8,8 @@ import Form from './component/Form';
 import TakePic from './component/TakePic';
 import Instruction from './component/Instruction';
 import RecordVideo from './component/RecordVideo';
+import TestResult from './component/TestResult';
+import Finish from './component/Finish';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
       <Route exact path="/snap" component={()=><TakePic/>}/>
       <Route exact path="/instruction" component={()=><Instruction/>}/>
       <Route exact path="/recordvideo" component={()=><RecordVideo/>}/>
+      <Route exact path="/testresult" component={()=><TestResult/>}/>
+      <Route exact path="/finish" component={()=><Finish/>}/>
     </Switch>
     
     </Router>

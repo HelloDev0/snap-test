@@ -9,7 +9,7 @@ const Form = () => {
             <div className="container">
                 <div className="row my-4">
                     <div className="col-sm-12 ">
-                        <p className='alerts fw-bold mx-auto p-2 rounded-3' >
+                        <p className='alerts mx-auto p-2 rounded-3' >
                             Reminder Please do not open your test yet. We will let you know when it is time.</p>
                     </div>
 
@@ -17,22 +17,22 @@ const Form = () => {
                 <div className="squitch row">
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">First Name <span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">First Name <span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Last Name <span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Last Name <span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Date of Birth <span className='text-danger'>*</span></label>
-                            <input type="text" className="form-control border-0"
+                            <label for="exampleFormControlInput1" className="form-label">Date of Birth <span className='text-danger'>*</span></label>
+                            <input type="date" className="form-control border-0" placeholder=''
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
@@ -40,28 +40,28 @@ const Form = () => {
                 <div className="squitch row">
                     <div className="col-md-6">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Email Address <span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Email Address <span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Mobile Phone Number<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Mobile Phone Number<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-12">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Address<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Address<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-12">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Address Line 2<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Address Line 2<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
@@ -70,21 +70,21 @@ const Form = () => {
                 <div className="squitch row">
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">City<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">City<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">State<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">State<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Zip Code<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Zip Code<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
@@ -93,41 +93,41 @@ const Form = () => {
                 <div className="squitch row">
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Gender (at birth)<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Gender (at birth)<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Race<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Race<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-4">
                         <div className="loginForm mb-4 text-start">
-                            <label for="exampleFormControlInput1" className="form-label fw-bold">Ethnicity<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" className="form-label">Ethnicity<span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
                         </div>
                     </div>
                     <div className="col-md-12 " >
                         <div className="form-check mx-auto mx-0 p-0 my-2" style={{ width: '400px' }}>
-                            <label for="exampleFormControlInput1" claNamess="form-label fw-bold text-start">Identity Confirmation<span className='text-danger'>*</span></label>
+                            <label for="exampleFormControlInput1" claNamess="form-label text-start fw-normal">Identity Confirmation<span className='text-danger'>*</span></label>
                         </div>
 
                         <div className="form-check mx-auto mb-3" style={{ width: '400px' }}>
 
                             <input className="form-check-input ml-0" type="checkbox" value="" id="flexCheckDefault" />
-                            <label className="form-check-label" for="flexCheckDefault">
+                            <label className="form-check-label fw-normal" for="flexCheckDefault">
                                 I hereby verify that all the information provided above is true and accurate.
                             </label>
                         </div>
                         <div className="form-check mx-auto mb-3" style={{ width: '400px' }}>
 
                             <input className="form-check-input ml-0" type="checkbox" value="" id="flexCheckDefault" />
-                            <label className="form-check-label" for="flexCheckDefault">
+                            <label className="form-check-label fw-normal" for="flexCheckDefault">
                                 Terms & Conditions <span className='text-danger'>*</span>
                             </label>
                         </div>

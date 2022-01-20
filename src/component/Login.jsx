@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import './style.css'
 
 const Login = () => {
-    const history=useHistory()
+    const history = useHistory()
     return (
         <>
             <div className='container text-center mt-5'>
@@ -16,7 +16,7 @@ const Login = () => {
                             <label for="exampleFormControlInput1" className="form-label fw-bold">Company Code <span className='text-danger'>*</span></label>
                             <input type="text" className="form-control border-0"
                                 id="exampleFormControlInput1" />
-Name                        </div>
+                        </div>
                         <div className="loginForm mb-4 text-start">
                             <label for="exampleFormControlTextarea1" className="form-label fw-bold">Employee ID #<span className='text-danger'>*</span></label>
                             <input type='text' className="form-control border-0"
@@ -27,11 +27,11 @@ Name                        </div>
                     </div>
 
                     <div className="col-sm-12 mt-5">
-                        <div className="prevBtn btn px-5 py-2.5" 
-                        onClick={()=>{history.push('/')}}>
+                        <div className="prevBtn btn px-5 py-2.5"
+                            onClick={() => { history.push('/') }}>
                             Previous</div>
                         <div className="nextBtn btn m-3 px-5 py-2.5"
-                        onClick={()=>{history.push('/form')}}>
+                            onClick={() => { history.push('/form') }}>
                             Next</div>
                     </div>
 

@@ -17,8 +17,8 @@ const RecordVideo = () => {
                 </div>
 
                 <div className="row ">
-                    <div className="col-md-6 mx-auto" style={{paddingLeft:'8rem'}}>
-                        <p>Press record,open your test, and begin!</p>
+                    <div className="col-md-6 text-center mx-auto" style={{paddingLeft:'8rem'}}>
+                        <p style={{color:'#5554e6',paddingRight:'7rem'}} className='fw-bold ml-5 '>Press record,open your test, and begin!</p>
                         <input type='file'/>
                     </div>
                 </div>
@@ -28,19 +28,19 @@ const RecordVideo = () => {
                             onClick={() => { history.push('/instruction') }}>
                             Previous</div>
                         <div className="nextBtn btn m-3 px-5 py-2.5"
-                            onClick={() => { history.push('/recordvideo') }}>
+                            onClick={() => { history.push('/testresult') }}>
                             Next</div>
                     </div>
 
                     <div className="footerDot col-sm-12" >
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span style={{ color: '#5554e6' }}><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
+                        <span ><i className="fas fa-circle"></i></span>
+                        <span ><i className="fas fa-circle"></i></span>
+                        <span ><i className="fas fa-circle"></i></span>
+                        <span ><i className="fas fa-circle"></i></span>
+                        <span ><i className="fas fa-circle"></i></span>
+                        <span style={{ color: '#5554e6' }}><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
+                        <span><i className="fas fa-circle"></i></span>
                     </div>
                 </div>
             </div>

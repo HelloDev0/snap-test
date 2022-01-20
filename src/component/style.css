@@ -61,3 +61,11 @@
     }
     
 }
+.selectmenu{
+    width: 363px;
+    height: 47px;
+    border-radius: 7px;
+    background-color: rgb(240 243 248);
+    padding: 5px;
+    color: gray;
+}
