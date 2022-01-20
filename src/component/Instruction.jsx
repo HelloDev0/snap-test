@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import './style.css'
 
 const Instruction = () => {
     const history = useHistory()
+    const [video,setVideo]=useState(null)
+    // console.log("cehek it",video);
     return (
         <>
             <div className="container">
@@ -14,22 +16,41 @@ const Instruction = () => {
                         </p>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-md-6 mx-auto my-2 ">
-                        <div style={{paddingLeft:'18.5%'}}>
+                <div className="row d-flex justify-content-center">
+                    <div className="col-md-6 text-center my-2 ">
+                    {!video ?(
+                        <div className='text-start mx-auto'
+                        style={{paddingLeft:'18.5%'}}
+                        >
                             <p className='fw-bold'
-                                style={{ color: '#5554e6' }}> How to take your COVID test:</p>
+                                style={{ color: '#5554e6' }}
+                                > How to take your COVID test:</p>
                             <p> 1) Let's review what's in your kit</p>
                             <p>   2) How to take your test</p>
                             <p>   3) What results look like</p>
                             <p>  4) Let's see your results! Hold up the test for us to take a look</p>
                         </div>
+                        ):(
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qBt_H4Gc-rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                
+                            </div>
+                        )}
+                        {!video?(
                         <div className='d-flex justify-content-center'>
                             <button className='instBtn btn px-4 py-2 my-3'
-                            >Watch Instructional Video</button>
+                            onClick={()=>{setVideo(true)}}
+                            > <i class="fas fa-play" style={{paddingRight:'5px'}}></i>Watch Instructional Video</button>
                         </div>
+                        ):(
+                            <div className='d-flex justify-content-center'>
+                            <button className='instBtn btn px-4 py-2 my-3'
+                            onClick={()=>{setVideo(null)}}
+                            > Close</button>
+                        </div>
+                        )}
                         <div className='d-flex justify-content-center'>
-                            <a href="https://youtu.be/qBt_H4Gc-rU" className='text-decoration-none text-dark'> https://youtu.be/qBt_H4Gc-rU</a>
+                            {/* <a href="https://youtu.be/qBt_H4Gc-rU" className='text-decoration-none text-dark'> https://youtu.be/qBt_H4Gc-rU</a> */}
                         </div>
                     </div>
                 </div>

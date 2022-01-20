@@ -76,3 +76,18 @@
     font-weight:bold;
     margin: 1rem auto;
 }
+.finshFooter{
+    font-size: 12px;
+    line-height: 10px;
+}
+.StartagainText{
+    color: #5554e6;
+    font-weight:600;
+    font-size: 23px;
+}
+.Startagainbtn{
+    background-color: #5554e6;
+    padding: 0.6rem 1.6rem;
+    color: white;
+
+}

@@ -10,6 +10,7 @@ import Instruction from './component/Instruction';
 import RecordVideo from './component/RecordVideo';
 import TestResult from './component/TestResult';
 import Finish from './component/Finish';
+import StartAgain from './component/StartAgain';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Route exact path="/recordvideo" component={()=><RecordVideo/>}/>
       <Route exact path="/testresult" component={()=><TestResult/>}/>
       <Route exact path="/finish" component={()=><Finish/>}/>
+      <Route exact path="/restart" component={()=><StartAgain/>}/>
     </Switch>
     
     </Router>

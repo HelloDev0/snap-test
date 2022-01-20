@@ -28,7 +28,7 @@ const TestResult = () => {
                     <div>
                         <label>what do you think your test result is? <span className='text-danger'>*</span></label>
                         <br />
-                        <select className="selectmenu mt-3" aria-label="Default select example">
+                        <select className="selectmenu mt-3 border-0" aria-label="Default select example">
                             <option selected>Your Answer</option>
                             <option value="1">Negative</option>
                             <option value="2">Positive</option>
