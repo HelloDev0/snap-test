@@ -1,9 +1,23 @@
+body{
+  padding: 0 !important;
+  margin: 0 !important;
+}
 *{
   font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
 }
 * label{
   font-weight: 600;
 }
+/* #root{
+  box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+    padding: 0 !important;
+    margin: 0 !important;
+} */
 
 .startText{
   font-size: 15px;
@@ -39,7 +53,7 @@
   .alerts{
     background-color: rgb(255 228 228 );
     font-size: 13px;
-    width: 300px;
+    width: 70%;
     color: rgb(173 81 80 );
     }
     .startText{
@@ -50,7 +64,7 @@
       width: 300px !important;
     }
     .formDeclare{
-      width: 270px;
+      width: 60vw;
     }
 }
   
@@ -82,8 +96,9 @@
   padding-left: 0% !important;
 }
 .squitch{
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding: 0;
+  /* padding-left: 7rem;
+  padding-right: 7rem; */
 }
 .instBtn{
   color: #fff;
@@ -95,13 +110,14 @@
   color: white;
   background-color: #2f2fc9;
 }
-
-@media only screen and (max-width: 768px){
-  .squitch{
-      padding: 0;
-  }
+/* 
+@media only screen and (max-width: 520px){
+  .container{
+      padding: 0 1rem !important;
+      box-sizing: unset;
+  } 
   
-}
+} */
 .selectmenu{
   width: 363px;
   height: 47px;
@@ -140,15 +156,35 @@
   padding: 5px;
   color: gray;
 }
+@media only screen and (min-width: 768px){
+  
+.formPage{
+  width: 70%;
+}}
 @media only screen and (device-width: 375px)
               and (device-height:667px) 
               and (-webkit-device-pixel-ratio : 2){
-  #exampleFormControlInput1{
-    /* padding-left: 1.5rem; */
-    /* padding-right: 1.5rem; */
-    width: 350px;
-    margin-left: 0px !important;
-  }}
+                .formPage{
+                  width: 100vw;
+                padding-left: 36px;
+                padding-right: 0 !important;
+                }
+              }
+              .container{
+                padding: 0 0 0 1.5rem;
+              }
+ @media only screen and (device-width: 280px)
+              and (device-height:653px) 
+              and (-webkit-device-pixel-ratio : 2){
+                .formPage{
+                  width: 100vw;
+                padding-left: 36px;
+                padding-right: 0 !important;
+                }
+              }
+              .container{
+                padding: 0 0 0 1.5rem;
+       }
 /* @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
@@ -169,3 +205,4 @@
                   padding-right: 1rem;
                 }
               } */
+

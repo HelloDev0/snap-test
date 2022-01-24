@@ -16,7 +16,8 @@ function App() {
 
     <Router>
       <Header />
-      <Switch>
+      <Switch >
+        {/* <main> */}
         <Route exact path="/" component={() => <StartPage />} />
         <Route exact path="/login" component={() => <LoginPage />} />
         <Route exact path="/detailsform" component={() => <DetailsFormPage />} />
@@ -25,7 +26,8 @@ function App() {
         <Route exact path="/recordvideo" component={() => <RecordVideoPage />} />
         <Route exact path="/testresult" component={() => <TestResultPage />} />
         <Route exact path="/finish" component={() => <FinishPage />} />
-        <Route exact path="/final" component={() => <FinalPage />} />
+      <Route exact path="/final" component={() => <FinalPage />} />
+      {/* </main> */}
       </Switch>
 
     </Router>

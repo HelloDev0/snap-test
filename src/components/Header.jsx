@@ -11,7 +11,7 @@ const Header = () => {
                         <div>
                             <a href="https://snaptest.testbase.info/" className="custom-logo-link" rel="home">
                                 <img
-                                    src="images/snapTestLogo.png"
+                                    src="SnapTest Logo.png"
                                     className="custom-logo h-100" alt="SnapTest" /></a>
                         </div>
 

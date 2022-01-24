@@ -59,16 +59,16 @@ export const DetailsFormPage = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="formPage container">
                 <div className="row my-4">
-                    <div className="col-sm-12 ">
+                    <div className="col-sm-12 col-xs-12 ">
                         <div className='alerts text-center mx-auto px-2 py-1 rounded-3 fw-bold' >
                             <p> Reminder <br /> Please do not open your test yet. We will let you know when it is time.</p></div>
                     </div>
 
                 </div>
                 <div className="squitch row">
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
 
                         <div className="loginForm mb-4 text-start">
                             <label htmlFor="exampleFormControlInput1" className="form-label">First Name <span className='text-danger'>*</span></label>
@@ -90,7 +90,7 @@ export const DetailsFormPage = () => {
                         </div>
 
                     </div>
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="loginForm mb-4 text-start">
                             <label htmlFor="exampleFormControlInput1" className="form-label">Last Name <span className='text-danger'>*</span></label>
                             {err || names ? (<input type="text" className="form-control border border-danger"
@@ -109,7 +109,7 @@ export const DetailsFormPage = () => {
                             )}
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="loginForm mb-4 text-start">
                             <label htmlFor="exampleFormControlInput1" className="form-label">Date of Birth <span className='text-danger'>*</span></label>
                             {err ? (
@@ -205,7 +205,7 @@ export const DetailsFormPage = () => {
                     </div>
                 </div>
                 <div className="squitch row">
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="loginForm mb-4 text-start">
                             <label htmlFor="exampleFormControlInput1" className="form-label">City<span className='text-danger'>*</span></label>
                             {err ? (
@@ -223,7 +223,7 @@ export const DetailsFormPage = () => {
                             )}
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-12">
+                    <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="loginForm mb-4 text-start">
                             <label htmlFor="exampleFormControlInput1" className="form-label">State<span className='text-danger'>*</span></label>
                             {err ? (
@@ -394,7 +394,7 @@ export const DetailsFormPage = () => {
                         
                     </div>
                     ):(
-                        <div className="col-md-12 " >
+                        <div className="col-md-12 col-sm-12 col-xs-12" >
                         <div className="form-check mx-auto mx-0 p-0 my-2" style={{ width: '400px' }}>
                             <label htmlFor="exampleFormControlInput1" className="form-label text-start fw-normal">Identity Confirmation<span className='text-danger'>*</span></label>
                         </div>
@@ -424,7 +424,7 @@ export const DetailsFormPage = () => {
 
                 </div>
                 <div className="row text-center">
-                    <div className="col-sm-12 mt-2">
+                    <div className="col-sm-12 col-xs-12 mt-2 ">
                         <div className="prevBtn btn px-5 py-2.5"
                             onClick={() => { history.push('/login') }}>
                             Previous</div>

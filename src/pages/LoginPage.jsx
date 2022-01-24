@@ -37,13 +37,13 @@ export const LoginPage = () => {
         <>
             <div className="container text-center mt-5">
                 <div className="row">
-                    <div className="col-md-12 mb-4">
+                    <div className="col-md-12 col-xs-12 mb-4">
                         <p className="alerts fw-bold mx-auto p-2 rounded-3">
                             Please wait to open your COVID test; we will let you know when it
                             is time to start!
                         </p>
                     </div>
-                    <div className="col-md-12 mx-auto my-3 " style={{ width: "435px" }}>
+                    <div className="col-md-12 col-xs-12 mx-auto my-3 " style={{ width: "435px" }}>
                         <div className="loginForm mb-4 text-start ">
                             <label htmlFor="exampleFormControlInput1" className="form-label fw-bold">Company Code <span className='text-danger'>*</span></label>
 
@@ -97,7 +97,7 @@ export const LoginPage = () => {
                         </div>
                     </div>
 
-                    <div className="col-sm-12 mt-5">
+                    <div className="col-sm-12 col-xs-12 mt-5">
                         <div className="prevBtn btn px-5 py-2.5"
                             onClick={() => { history.push('/') }}>
                             Previous</div>
