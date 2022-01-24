@@ -1,38 +1,35 @@
 
 import './App.css';
-import Header from './component/Header';
-import Login from './component/Login';
-import Start from './component/Start';
+import Header from './components/Header';
+// import Login from './pages/LoginPage';
+import {StartPage, LoginPage,DetailsFormPage,
+  IdentityPage,InstructionPage,RecordVideoPage,TestResultPage,
+  FinishPage,FinalPage} from './pages';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Form from './component/Form';
-import TakePic from './component/TakePic';
-import Instruction from './component/Instruction';
-import RecordVideo from './component/RecordVideo';
-import TestResult from './component/TestResult';
-import Finish from './component/Finish';
-import StartAgain from './component/StartAgain';
+
+
 
 
 function App() {
   return (
-    
-    
+
+
     <Router>
-    <Header/>
-    <Switch>
-      <Route exact path="/" component={()=><Start/>}/>
-      <Route exact path="/login" component={()=><Login/>}/>
-      <Route exact path="/form" component={()=><Form/>}/>
-      <Route exact path="/snap" component={()=><TakePic/>}/>
-      <Route exact path="/instruction" component={()=><Instruction/>}/>
-      <Route exact path="/recordvideo" component={()=><RecordVideo/>}/>
-      <Route exact path="/testresult" component={()=><TestResult/>}/>
-      <Route exact path="/finish" component={()=><Finish/>}/>
-      <Route exact path="/restart" component={()=><StartAgain/>}/>
-    </Switch>
-    
+      <Header />
+      <Switch>
+        <Route exact path="/" component={() => <StartPage />} />
+        <Route exact path="/login" component={() => <LoginPage />} />
+        <Route exact path="/detailsform" component={() => <DetailsFormPage />} />
+        <Route exact path="/identity" component={() => <IdentityPage />} />
+        <Route exact path="/instruction" component={() => <InstructionPage />} />
+        <Route exact path="/recordvideo" component={() => <RecordVideoPage />} />
+        <Route exact path="/testresult" component={() => <TestResultPage />} />
+        <Route exact path="/finish" component={() => <FinishPage />} />
+        <Route exact path="/final" component={() => <FinalPage />} />
+      </Switch>
+
     </Router>
-    
+
   );
 }
 

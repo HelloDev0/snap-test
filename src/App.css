@@ -4,3 +4,168 @@
 * label{
   font-weight: 600;
 }
+
+.startText{
+  font-size: 15px;
+  width: 400px;
+}
+.startBtn{
+  background-color: #5554e6;
+  color: #fff;
+  
+}
+.startBtn:hover{
+  background-color: #2f2fc9;
+  color: #fff;
+}
+
+.footerDot span{
+  font-size: 13px;
+  color: rgb(240 243 248);
+  /* line-height: 50px; */
+  margin: 5px;
+}
+.footerDot{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.alerts{
+  background-color: rgb(255 228 228 );
+  font-size: 13px;
+  width: 400px;
+  color: rgb(173 81 80 );
+}
+@media only screen and (max-width: 520px){
+  .alerts{
+    background-color: rgb(255 228 228 );
+    font-size: 13px;
+    width: 300px;
+    color: rgb(173 81 80 );
+    }
+    .startText{
+      font-size: 15px;
+      width: 300px;
+    }
+    .finishtxt{
+      width: 300px !important;
+    }
+    .formDeclare{
+      width: 270px;
+    }
+}
+  
+
+.prevBtn{
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
+}
+.prevBtn:hover{
+  background-color: rgb(240 243 248);
+}
+.nextBtn{
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  padding-top:0.75rem;
+  padding-bottom:0.75rem;
+  background-color: #5554e6;
+  color: #fff;
+}
+.nextBtn:hover{
+  background-color: #2f2fc9;
+  color: #fff ;
+}
+.loginForm input{
+  background-color: rgb(240 243 248);
+  color: gray;
+}
+.formcheck{
+  padding-left: 0% !important;
+}
+.squitch{
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.instBtn{
+  color: #fff;
+  background-color: #5554e6;
+  margin: 0 auto;
+}
+
+.instBtn:hover{
+  color: white;
+  background-color: #2f2fc9;
+}
+
+@media only screen and (max-width: 768px){
+  .squitch{
+      padding: 0;
+  }
+  
+}
+.selectmenu{
+  width: 363px;
+  height: 47px;
+  border-radius: 7px;
+  background-color: rgb(240 243 248);
+  padding: 5px;
+  color: gray;
+}
+.finishtxt{
+  color: #5554e6;
+  font-size: 12px;
+  width: 350px;
+  font-weight:bold;
+  margin: 1rem auto;
+}
+.finshFooter{
+  font-size: 13px;
+  line-height: 40%;
+}
+.StartagainText{
+  color: #5554e6;
+  font-weight:600;
+  font-size: 23px;
+}
+.Startagainbtn{
+  background-color: #5554e6;
+  padding: 0.6rem 1.6rem;
+  color: white;
+
+}
+.selectmenu2{
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  background-color: rgb(240 243 248);
+  padding: 5px;
+  color: gray;
+}
+@media only screen and (device-width: 375px)
+              and (device-height:667px) 
+              and (-webkit-device-pixel-ratio : 2){
+  #exampleFormControlInput1{
+    /* padding-left: 1.5rem; */
+    /* padding-right: 1.5rem; */
+    width: 350px;
+    margin-left: 0px !important;
+  }}
+/* @media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+      .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+     }
+
+
+}
+@media only screen and (device-width: 390px)
+              and (device-height:844px) {
+                .container{
+                  padding-left: 1rem;
+                  padding-right: 1rem;
+                }
+              } */

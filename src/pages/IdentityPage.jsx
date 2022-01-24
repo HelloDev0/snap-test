@@ -1,16 +1,20 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import Webcam from "react-webcam";
+import { Upload } from '@aws-sdk/lib-storage';
+import { S3Client, S3 } from '@aws-sdk/client-s3';
+import Footer from '../components/Footer';
 
+import('buffer').then(({ Buffer }) => { global.Buffer = Buffer; })
 
-const TakePic = () => {
+export const IdentityPage = () => {
     const history = useHistory()
     const webcamRef1 = React.useRef(null);
     const webcamRef2 = React.useRef(null);
     const [hasPhotoID, setHasPhotoID] = useState(false);
     const [hasPhotoSelf, setHasPhotoSelf] = useState(false);
-    const [photoIDuri, setPhotoIDuri] = useState("");
-    const [photoSelfUri, setPhotoSelfUri] = useState("");
+    const [photoIDuri, setPhotoIDuri] = useState(null);
+    const [photoSelfUri, setPhotoSelfUri] = useState(null);
 
     const videoConstraints = {
         // width: 1280,
@@ -18,6 +22,56 @@ const TakePic = () => {
         facingMode: "user"
     };
 
+    //======= aws upload ==============
+
+    const uploadPhotoID = async () => {
+
+        
+
+        const chunk= JSON.stringify(photoIDuri).replace('data:image/jpeg;base64,','');
+
+        // const file = new File([chunk],'', {
+        //     type: "image/jpeg"
+        // });
+
+        const target = {
+            Bucket: 'snaptest-dev',
+            Key: 'file-upload/photoNew.jpeg',
+            Body: photoIDuri,
+        };
+
+        const cred = {
+            accessKeyId: 'AKIAQCTZGOYUVKTL3O4Z',
+            secretAccessKey: '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'
+        }
+
+        try {
+            const parallelUploads3 = new Upload({
+                client: new S3Client({
+                    region: 'us-east-1',
+                    credentials: cred
+                }),
+                params: target,
+                queueSize: 4, // optional concurrency configuration
+                partSize: '1MB', // optional size of each part
+                leavePartsOnError: false,
+            })
+
+            parallelUploads3.on("httpUploadProgress", (progress) => {
+                console.log(progress);
+            })
+
+            await parallelUploads3.done(() => {
+                console.log('upload complete');
+            });
+        } catch (err) {
+            console.log('upload error--->>>>', err)
+        }
+    }
+
+
+
+    //=================================
 
     const clickIDPhoto = () => {
         try {
@@ -115,7 +169,7 @@ const TakePic = () => {
                                 <img src={photoSelfUri} alt="photoID" style={{ width: '100%', height: '500px' }} />
                                 <div className='row justify-content-center'>
                                     <div className='d-flex justify-content-center align-items-center border border-2 border-secondary rounded-circle mt-2' style={{ width: '50px', height: '50px', cursor: 'pointer' }} onClick={() => { setPhotoSelfUri(''); setHasPhotoSelf(false); }}>
-                                        <i class="fas fa-redo text-secondary" style={{ fontSize: '25px' }}></i>
+                                        <i className="fas fa-redo text-secondary" style={{ fontSize: '25px' }}></i>
                                     </div>
                                 </div>
                             </>
@@ -132,7 +186,7 @@ const TakePic = () => {
                                     />
                                     <div className='row justify-content-center'>
                                         <div className='d-flex justify-content-center align-items-center border border-2 border-secondary rounded-circle' style={{ width: '50px', height: '50px', cursor: 'pointer' }} onClick={() => clickSelfPhoto()}>
-                                            <i class="fas fa-camera text-secondary" style={{ fontSize: '25px' }}></i>
+                                            <i className="fas fa-camera text-secondary" style={{ fontSize: '25px' }}></i>
                                         </div>
                                     </div>
                                 </div>
@@ -146,27 +200,21 @@ const TakePic = () => {
                 <div className="row text-center">
                     <div className="col-sm-12 mt-2">
                         <div className="prevBtn btn px-5 py-2.5"
-                            onClick={() => { history.push('/form') }}>
+                            onClick={() => { history.push('/detailsform') }}>
                             Previous</div>
                         <div className="nextBtn btn m-3 px-5 py-2.5"
-                            onClick={() => { history.push('/instruction') }}>
+                            onClick={() => {
+                                // uploadPhotoID();
+                                history.push('/instruction')
+                            }} >
+
                             Next</div>
                     </div>
 
-                    <div className="footerDot col-sm-12" >
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span ><i class="fas fa-circle"></i></span>
-                        <span style={{ color: '#5554e6' }}><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                        <span><i class="fas fa-circle"></i></span>
-                    </div>
+                    <Footer index={3} />
                 </div>
             </div>
         </>
     )
 }
 
-export default TakePic

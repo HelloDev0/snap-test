@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
-import './style.css'
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
-const StartAgain = () => {
+export const FinalPage = () => {
     const history=useHistory()
     useEffect(() => {
       setTimeout(() => {
@@ -14,7 +13,7 @@ const StartAgain = () => {
         <div className="container">
             <div className="row text-center">
                 <div className="col-md-12">
-                <img src="Group 8150.png" alt="start again for new test"  className='my-5'/>
+                <img src="images/thankYouBanner.png" alt="start again for new test"  className='my-5'/>
                 <p className='StartagainText'>Submission complete.</p>
                 <button className='Startagainbtn btn'
                 onClick={()=>{history.push('/')}}>Return to start a new test</button>
@@ -28,4 +27,3 @@ const StartAgain = () => {
   </>;
 };
 
-export default StartAgain;

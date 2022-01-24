@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import './style.css'
+import Footer from '../components/Footer'
 
-const Instruction = () => {
+
+export const InstructionPage = () => {
     const history = useHistory()
     const [video,setVideo]=useState(null)
     // console.log("cehek it",video);
@@ -31,8 +32,9 @@ const Instruction = () => {
                             <p>  4) Let's see your results! Hold up the test for us to take a look</p>
                         </div>
                         ):(
-                            <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/qBt_H4Gc-rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div className='mx-auto'>
+                                <iframe width="80%" height="315" src="https://www.youtube.com/embed/qBt_H4Gc-rU" title="YouTube video player"
+                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 
                             </div>
                         )}
@@ -44,9 +46,11 @@ const Instruction = () => {
                         </div>
                         ):(
                             <div className='d-flex justify-content-center'>
-                            <button className='instBtn btn px-4 py-2 my-3'
+                            {/* <button className='instBtn btn px-4 py-2 my-3'
                             onClick={()=>{setVideo(null)}}
-                            > Close</button>
+                            > Close</button> */}
+                            <h5 className='mt-4 ' 
+                            style={{ cursor:'pointer' ,color:'#5554e6',fontWeight:'600'}} onClick={()=>{setVideo(null)}}>Close Video Tutorial</h5>
                         </div>
                         )}
                         <div className='d-flex justify-content-center'>
@@ -57,27 +61,18 @@ const Instruction = () => {
                 <div className="row text-center mt-5">
                     <div className="col-sm-12 mt-2">
                         <div className="prevBtn btn px-5 py-2.5"
-                            onClick={() => { history.push('/snap') }}>
+                            onClick={() => { history.push('/identity') }}>
                             Previous</div>
                         <div className="nextBtn btn m-3 px-5 py-2.5"
                             onClick={() => { history.push('/recordvideo') }}>
                             Next</div>
                     </div>
 
-                    <div className="footerDot col-sm-12" >
-                        <span ><i className="fas fa-circle"></i></span>
-                        <span ><i className="fas fa-circle"></i></span>
-                        <span ><i className="fas fa-circle"></i></span>
-                        <span ><i className="fas fa-circle"></i></span>
-                        <span style={{ color: '#5554e6' }}><i className="fas fa-circle"></i></span>
-                        <span><i className="fas fa-circle"></i></span>
-                        <span><i className="fas fa-circle"></i></span>
-                        <span><i className="fas fa-circle"></i></span>
-                    </div>
+                    <Footer index={4} />
                 </div>
             </div>
         </>
     )
 }
 
-export default Instruction
+
